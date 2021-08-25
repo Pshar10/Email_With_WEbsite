@@ -1,0 +1,14 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylish.css') }}">
+    <style>
+
+        body {
+        
+          background-image: url({{ url_for ('static' , filename='img/black.jpg')}})
+        }
+    </style>
+
+</head>
+
+<h1 style="color:antiquewhite;">{{success}}</h1>
+<a href ="/">Go to HOME PAGE</a>

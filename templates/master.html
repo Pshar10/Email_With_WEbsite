@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Webpage</title>
+
+
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylish.css') }}">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> -->
+
+<style>
+
+
+body {
+
+  background-image: url({{ url_for ('static' , filename='img/black.jpg')}})
+}
+</style>
+</head>
+
+
+
+<body>
+
+<h1 class="introduction"> Willkommen auf unserer Webseite  </h1>
+
+<image src="{{ url_for ('static' , filename='img/tu.jpeg')}}" alt="flag"
+style="
+    height: 174px;
+    width: 253px;
+    margin-left: -5px;
+    margin-top: 8px;
+    padding: 23px;
+">
+
+<div class="right">Hello! Here is a brief introduction of our team members: </div>
+
+<div  class="names">
+
+<ol>
+<li>{{user}} <p style="font-size: 19px;margin: 1px;">Pranav comes from India. He has done his Bachelors in Electronics and Communication Technology from Shri Mata Vaishno Devi University, India. He has made a Smart Fingerprint Based Attendance System in his final project.</p></li>
+<br>
+<li>Adarsh Manoj  <p style="font-size: 19px;margin: 1px;">Adarsh is an Indian. He has done Electronics and Communication engineering from Srm Institute of Science and Technology, India.He has made a research paper on "Design Of LIDAR system for terrain mapping.</p></li>
+<br>
+<li>Reshma Khan  <p style="font-size: 19px;margin: 1px;">Reshma Khan has done her bachelors in Electronics and communication from Jawaharlal Nehru Technological University Hyderabad, India. She has done her final year project in "Electronic Gloves for speechless and dumb device" using microcontrollers and flex sensors where analog singnal is converted to digital signals.</p></li>
+<br>
+<li>Shoaib Anwar  <p style="font-size: 19px;margin: 1px;">Muhammad Shoaib belongs from Pakistan. He has done his bachelors in Electrical Computer Engineering from Comsats University of science and technology(Pakistan). He has done his final year project in "Electronic Teacher assistant device" using Arduino UNO and Arduino Mega."</p></li>
+</ol>
+
+</div>
+<a href ="https://en.wikipedia.org/wiki/Technische_Universit%C3%A4t_Ilmenau" target="_blank" style="margin-left: -250px;
+text-decoration: none;cursor: pointer;color: #aaaed8;font-size: 17px;">Find more about Ilmenau</a>
+<div class="eml">
+   You can send your mail to anyone here:
+ </div>
+
+<form action="{{url_for('send_message')}}" method="POST" style="margin-top:7px;" >
+
+<div class="form-group" id="field1">
+<input type="text" name="Email" placeholder="Email" required id="">
+</div>
+<div class="form-group" id="field2">
+<input type="text" name="SUBJECT" placeholder="SUBJECT" required id="">
+</div>
+<div class="form-group" id="field3">
+<textarea  name="message" id="" cols="30" placeholder="Message Body" required rows="10"></textarea>
+</div>
+<button class="btn" id="submission">Submit</button>
+</form>
+
+
+</body>
+</html>

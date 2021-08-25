@@ -1,0 +1,92 @@
+
+    
+   
+body{
+
+    background-repeat: no-repeat;
+    background-size: 1547px 854px;
+
+}
+
+.introduction{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    /* background-color: burlywood; */
+    color: white;
+    border: 3px solid blueviolet;
+    background-color: #263156;
+    margin: 11px;
+    text-align: center;
+    margin-left: 0px;
+    /* margin-right: 0px; */
+    margin-top: -8px;
+    padding: 5px;
+    border-radius: 27px;
+    
+}
+
+.right{
+
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: pink;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    margin-right: 19px;
+    margin-top: 45px;
+    margin-left: 191px;
+    text-shadow: 0 0 2px #ff0000, 0 0 2px;
+}
+
+.names{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #a6adec;
+    display: inline-block;
+    /* text-align: initial; */
+    margin-left: 249px;
+    margin-top: 94px;
+    position: absolute;
+    
+
+}
+
+.form-group{
+    
+    display: inline-flexbox;
+    padding: 10px;
+    margin-bottom: 1px;
+    width: 60%;
+    display: block;
+    margin-left: 14px;
+}
+
+.btn:hover{
+
+    background-color: rgb(219, 141, 141);
+    color: whitesmoke;
+    cursor: pointer;
+    
+}
+
+.btn{
+    padding: 12px;
+    margin-left: 26px;
+    border-radius: 27px;
+    margin-right: 8px;
+    text-align: center;
+    padding-right: 54px;
+    padding-left: 46px;
+    margin-top: 10px;
+}
+
+.eml{
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    color: white;
+    margin-left: 4px;
+    margin-top: 33px;
+    padding-top: -6px;
+    padding-bottom: 9px;
+}
